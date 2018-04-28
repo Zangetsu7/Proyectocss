@@ -1,0 +1,58 @@
+*{
+  font-family: 'Dancing Script';
+}
+header{
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #5b7989;
+  border-radius: 20px 20px 0 0;
+}
+h1{
+  text-shadow: 2px 2px 2px #02010a;
+  display: inline-block;
+  color: white;
+}
+.divfoto{
+  text-align: center;
+}
+nav{
+  margin-left: 154px;
+  display: inline-block;
+}
+.menu{
+  text-shadow: 2px 2px 2px #02010a;
+  display: inline-block;
+  font-size: 1.2em;
+}
+.container{
+  display: inline-block;
+}
+.foto{
+  background-color: #82c3a6;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.fotos{
+  background-color: #d5c75f;
+  display: flex;
+  width: 100%;
+}
+a{
+  color: white;
+}
+#figure1{
+  border: 2px solid;
+  transition: transform 2s;
+}
+#figure1:hover{
+  transform: rotate(10deg);
+}
+#figure2{
+  border: 2px solid;
+  transition: transform 2s;
+}
+#figure2:hover{
+  transform: translate(20px,-5px);
+}
