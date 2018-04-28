@@ -75,3 +75,16 @@ a[href="#"]{
   transform: translate(20px,-5px);
   box-shadow: 2px 2px #82c3a6;
 }
+@media screen and (max-width: 900px){
+  #contenido{
+    width: 100%;
+  }
+  header{
+    text-align: center;
+  }
+  h1,nav{
+    display: block;
+    position: static;
+    float: none;
+  }
+}
