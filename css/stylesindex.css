@@ -1,32 +1,42 @@
 *{
   font-family: 'Dancing Script';
 }
+body{
+  background-color: #02010a;
+}
 header{
-  text-align: center;
   display: block;
   width: 100%;
+  height: 100px;
   background-color: #5b7989;
   border-radius: 20px 20px 0 0;
 }
 h1{
   text-shadow: 2px 2px 2px #02010a;
-  display: inline-block;
+  display: inline;
+  position: relative;
+  top: 30px;
+  left: 5%;
   color: white;
 }
 .divfoto{
   text-align: center;
 }
 nav{
-  margin-left: 154px;
-  display: inline-block;
+  display: inline;
+  position: relative;
+  float: right;
+  top: 40px;
+  right: 5%;
+}
+img{
+    box-shadow: 2px 2px #02010a;
 }
 .menu{
   text-shadow: 2px 2px 2px #02010a;
   display: inline-block;
   font-size: 1.2em;
-}
-.container{
-  display: inline-block;
+  margin-left: 10px;
 }
 .foto{
   background-color: #82c3a6;
@@ -42,17 +52,20 @@ nav{
 a{
   color: white;
 }
+a[href="#"]{
+  text-decoration: none;
+}
 #figure1{
-  border: 2px solid;
-  transition: transform 2s;
+  transition: transform 1.5s;
 }
 #figure1:hover{
   transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
 }
 #figure2{
-  border: 2px solid;
-  transition: transform 2s;
+  transition: transform 1.5s;
 }
 #figure2:hover{
   transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
 }
