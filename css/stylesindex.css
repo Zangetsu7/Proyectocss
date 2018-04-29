@@ -25,9 +25,6 @@ h1{
   top: 30px;
   color: white;
 }
-.divfoto{
-  text-align: center;
-}
 nav{
   display: inline;
   position: relative;
@@ -37,26 +34,49 @@ nav{
 }
 img{
     box-shadow: 2px 2px #02010a;
+    width: 70%;
+    display: inline-block;
+}
+.divfoto{
+  text-align: center;
+  margin: 0;
 }
 .menu{
   text-shadow: 2px 2px 2px #02010a;
   display: inline-block;
   font-size: 1.2em;
   margin-left: 10px;
+  color: white;
 }
 .foto{
   background-color: #82c3a6;
   display: inline-block;
   text-align: center;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .fotos{
   background-color: #d5c75f;
   display: flex;
+  padding-top: 20px;
   width: 100%;
 }
-a{
-  color: white;
+footer{
+  display: flex;
+  background-color: #C6d5c5;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+.fdiv{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.info{
+  display: block;
+  color: black;
+  text-decoration: none;
 }
 a[href="#"]{
   text-decoration: none;
@@ -86,5 +106,20 @@ a[href="#"]{
     display: block;
     position: static;
     float: none;
+  }
+  .divfoto{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  .fotos{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+  }
+  .fdiv{
+    width: 100%;
   }
 }
