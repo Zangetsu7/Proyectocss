@@ -16,6 +16,7 @@ header{
   background-color: #5b7989;
   border-radius: 20px 20px 0 0;
   text-align: left;
+  animation: animacion 2s;
 }
 h1{
   text-shadow: 2px 2px 2px #02010a;
@@ -32,14 +33,10 @@ nav{
   top: 40px;
   right: 5%;
 }
-img{
-    box-shadow: 2px 2px #02010a;
-    width: 70%;
-    display: inline-block;
-}
 .divfoto{
   text-align: center;
   margin: 0;
+  width: 50%;
 }
 .menu{
   text-shadow: 2px 2px 2px #02010a;
@@ -62,11 +59,30 @@ img{
   padding-top: 20px;
   width: 100%;
 }
+.galeria{
+  background-color: #d5c75f;
+  display: flex;
+  padding-top: 20px;
+  width: 100%;
+}
 footer{
   display: flex;
   background-color: #C6d5c5;
   text-align: center;
   border-radius: 0 0 20px 20px;
+}
+.paisajes{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 22px;
+  margin-bottom: 32px;
+  width: 30%;
+}
+.imgpaisaje{
+  display: inline-block;
+  margin-top: 12px;
+  width: 100%;
+  height: auto;
 }
 .fdiv{
   display: inline-block;
@@ -81,7 +97,14 @@ footer{
 a[href="#"]{
   text-decoration: none;
 }
+#figuret{
+  box-shadow: 2px 2px #02010a;
+  display: inline-block;
+}
 #figure1{
+  box-shadow: 2px 2px #02010a;
+  height: 200px;
+  display: inline-block;
   transition: transform 1.5s;
 }
 #figure1:hover{
@@ -89,6 +112,9 @@ a[href="#"]{
   box-shadow: 2px 2px #82c3a6;
 }
 #figure2{
+  box-shadow: 2px 2px #02010a;
+  height: 200px;
+  display: inline-block;
   transition: transform 1.5s;
 }
 #figure2:hover{
@@ -97,6 +123,21 @@ a[href="#"]{
 }
 .icono{
   width: 5%;
+}
+.imgpaisaje[alt="Paisaje1"]{
+  filter: blur(10px);
+}
+.imgpaisaje[alt="Paisaje2"]{
+  filter: grayscale(100%);
+}
+.imgpaisaje[alt="Paisaje4"]{
+  filter: grayscale(100%);
+}
+.imgpaisaje[alt="Paisaje6"]{
+  filter: grayscale(100%);
+}
+.imgpaisaje[alt="Paisaje3"]{
+  filter:sepia(82%);
 }
 @media screen and (max-width: 900px){
   #contenido{
@@ -114,7 +155,16 @@ a[href="#"]{
   .divfoto{
     width: 100%;
   }
-  img{
+  #figuret{
+    width: 100%;
+    height: auto;
+  }
+  #figure2{
+    height: auto;
+    width: 100%;
+  }
+  #figure1{
+    height: auto;
     width: 100%;
   }
   .fotos{
@@ -126,4 +176,28 @@ a[href="#"]{
   .fdiv{
     width: 100%;
   }
+  .galeria{
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .paisajes{
+    width: 100%;
+    margin-left: 0;
+  }
+  .imgpaisaje{
+    display: block;
+    width: 100%;
+  }
+}
+@keyframes animacion {
+0%{
+  margin-top: 150%;
+}
+60%{
+  margin-top: -5%;
+}
+100%{
+  margin-top: 0%;
+}
 }
